@@ -2,7 +2,7 @@
 then use input from user to display each option.*/
 
     //Header Files
-#include <stdio.h>;
+#include <stdio.h>
 
     //Begins the Main Function
 int main(){
@@ -14,10 +14,10 @@ int main(){
     printf("\n");
     printf("1. Option One\n");
     printf("2. Option Two\n");
-    printf("3. Option Three");
+    printf("3. Option Three\n");
     printf("\n");
     printf("Press the NUMBER for which option you want..."); // Request user Input
-    scanf('%d', UserInput); // Storing User input
+    scanf("%d", &UserInput); // Storing User input
 
  switch(UserInput) {
     case 1:
@@ -34,12 +34,12 @@ int main(){
         if (UserInput < 1 || UserInput > 3){
          printf("You sure that was A VALID number?..\n");
          printf("try again!\n");
-        } continue;
+        } break;
  
    }
- } while (UserInput == 3); {
+ } while (UserInput != 3);
     printf("Thanks for playing!\n");
- }
+ return 0;
 
 }// ends the MAIN FUNCTION
 
